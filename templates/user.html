@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
   <h2>{{ username }} kullanıcısının etkinlikleri</h2>
+
   {% if events %}
+
+    <img src="/charts/{{ username }}/events-per-day.png" alt="Events per day chart" style="max-width:100%; height:auto; margin-bottom:20px;" />
+    
     {% for e in events %}
       <div class="card">
         <div><strong>Tip:</strong> {{ e.type }}</div>
@@ -9,6 +13,7 @@
         <div class="muted">{{ e.created_at }}</div>
       </div>
     {% endfor %}
+
   {% else %}
     <p>Etkinlik bulunamadı.</p>
   {% endif %}

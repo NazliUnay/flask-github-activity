@@ -1,12 +1,25 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template, request
 import requests
 
 app = Flask(__name__)
 
 @app.route("/")
-def hello():
-    return "Hello, GitHub Activity Dashboard!"
+def index():
+    return render_template("index.html")
 
+@app.route("/u")
+def user_events():
+    username = request.args.get("username")
+    if not username:
+        return render_template("index.html")
+
+    url = f"https://api.github.com/users/{username}/events/public"
+    resp = requests.get(url)
+    if resp.status_code != 200:
+        return render_template("user.html", username=username, events=[])
+    return render_template("user.html", username=username, events=resp.json())
+
+# API endpoint önceki haliyle kalabilir
 @app.route("/api/u/<username>/events")
 def get_events(username):
     url = f"https://api.github.com/users/{username}/events/public"

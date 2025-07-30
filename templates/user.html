@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>{{ username }} kullanıcısının etkinlikleri</h2>
+  {% if events %}
+    {% for e in events %}
+      <div class="card">
+        <div><strong>Tip:</strong> {{ e.type }}</div>
+        <div><strong>Repo:</strong> {{ e.repo.name }}</div>
+        <div class="muted">{{ e.created_at }}</div>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>Etkinlik bulunamadı.</p>
+  {% endif %}
+{% endblock %}

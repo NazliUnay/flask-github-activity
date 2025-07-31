@@ -1,0 +1,48 @@
+/* style.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  background: #f0f2f5;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 25px 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  color: #0366d6;
+  margin-bottom: 40px;
+  letter-spacing: 1.2px;
+}
+
+.card {
+  background: #fafafa;
+  padding: 20px 25px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(3, 102, 214, 0.1);
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(3, 102, 214, 0.2);
+}
+
+.muted {
+  color: #6c757d;
+  font-size: 14px;
+  font-style: italic;
+}

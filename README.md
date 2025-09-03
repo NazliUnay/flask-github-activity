@@ -54,10 +54,14 @@ docker run -p 5000:5000 flask-github-activity
 ---
 
 ## 📷 Ekran Görüntüsü
+### Kullanıcı Giriş ###
+<img src="docs/image1.png" alt="Flask GitHub Activity" width="600"/>
 
-<img src="image1.png" alt="Flask GitHub Activity" width="600"/>
-<img src="image2.png" alt="Flask GitHub Activity" width="600"/>
-<img src="image3.png" alt="Flask GitHub Activity" width="600"/>
+### Grafik ###
+<img src="docs/image2.png" alt="Flask GitHub Activity" width="600"/>
+
+### Kullanıcı Olayları ###
+<img src="docs/image3.png" alt="Flask GitHub Activity" width="600"/>
 
 ---
 
@@ -66,5 +70,13 @@ docker run -p 5000:5000 flask-github-activity
 - **Ad Soyad**: Şerife Nazlı Ünay  
 - **Üniversite**: Necmettin Erbakan Üniversitesi  
 - **Bölüm**: Bilgisayar Mühendisliği  
-- **LinkedIn**: [linkedin.com/in/serife-nazli-unay](https://www.linkedin.com/in/serife-nazli-unay/)  
+- **LinkedIn**: [linkedin.com/in/serife-nazli-unay](https://www.linkedin.com/in/serife-nazli-unay/)
+
+---
+
+## ✉️ İletişim
+
+Her türlü öneri, soru veya geri bildirim için benimle iletişime geçebilirsiniz:  
+📧 unay.nazli42@gmail.com
+
 
